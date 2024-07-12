@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpg" href="./public/icon.jpg" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="text/javascript" src="init.js"></script>
+  <title>Tetris</title>
+</head>
+
+<body onload="read()">
+<dialog id="table" open>
+</dialog>
+<div id="leaders"></div>
+<div class="grid">
+  <canvas id="field" width="250" height="500"></canvas>
+  <div class="right-column">
+    <div>
+      <h2>TETRIS</h2>
+      <p>Игрок: <label id="username"></label></p>
+      <p>Очки: <span id="score">0</span></p>
+      <p>Уровень: <span id="level">1</span></p>
+      <canvas id="next" width="150" height="150"></canvas>
+    </div>
+    <button onclick="start()" class="play-button">Старт!</button>
+  </div>
+</div>
+<!--<script type="text/javascript" src="constant.js"></script>-->
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

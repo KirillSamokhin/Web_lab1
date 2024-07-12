@@ -1,0 +1,19 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite -- --port 3000",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "jest ."
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "jest": "^29.7.0",
+    "puppeteer": "^21.6.1"
+  }
+}
